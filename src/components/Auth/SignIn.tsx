@@ -60,7 +60,7 @@ const SignIn: FunctionComponent<SignInProps> = ({ setIsSignIn, isSignIn }) => {
         <div className="flex flex-col items-center mb-5">
           <div className="text-[50px] font-semibold mb-1 mx-auto">
             <div className="text-primary leading-none mb-4 text-center">
-              Sign In To GoGoMoviw
+            FOX-д нэвтэрнэ үү
             </div>
           </div>
           <div className="flex gap-4 mb-8">
@@ -81,7 +81,7 @@ const SignIn: FunctionComponent<SignInProps> = ({ setIsSignIn, isSignIn }) => {
               <FaFacebookF size={25} className="text-primary" />
             </button>
           </div>
-          <p className="text-lg">or use your email account: </p>
+          <p className="text-lg">эсвэл имэйл хаягаа ашиглана уу: </p>
         </div>
 
         <form onSubmit={signInHandler}>
@@ -99,7 +99,7 @@ const SignIn: FunctionComponent<SignInProps> = ({ setIsSignIn, isSignIn }) => {
         translate-y-[-50%] visible peer-placeholder-shown:opacity-0 peer-placeholder-shown:invisible peer-placeholder-shown:translate-y-[-10%] ease-in-out
         `}
             >
-              Email
+              Имэйл
             </label>
             <AiOutlineMail
               size={25}
@@ -120,7 +120,7 @@ const SignIn: FunctionComponent<SignInProps> = ({ setIsSignIn, isSignIn }) => {
         translate-y-[-50%] visible peer-placeholder-shown:opacity-0 peer-placeholder-shown:invisible peer-placeholder-shown:translate-y-[-10%] ease-in-out
         `}
             >
-              Password
+              Нууц үг
             </label>
             <RiLockPasswordLine
               size={25}
@@ -128,18 +128,18 @@ const SignIn: FunctionComponent<SignInProps> = ({ setIsSignIn, isSignIn }) => {
             />
           </div>
           <button className="px-12 py-3 bg-primary rounded-full text-lg text-white uppercase absolute left-1/2 -translate-x-1/2 hover:bg-[#4161cc] transition duration-300">
-            Sign In
+          Нэвтрэх
           </button>
         </form>
 
         <p className="text-xl flex gap-2 mt-32 justify-center">
-          <span>Not a member?</span>
+          <span>Гишүүн биш үү?</span>
           <button
             type="submit"
             onClick={() => setIsSignIn(!isSignIn)}
             className="text-primary/90 underline"
           >
-            Sign Up
+            Бүртгүүлэх
           </button>
         </p>
       </div>

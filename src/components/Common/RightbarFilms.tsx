@@ -76,7 +76,7 @@ const RightbarFilms: FunctionComponent<RightbarFilmsProps> = ({
         onClick={() => navigate("/explore")}
         className="bg-dark-lighten py-2 w-full rounded-full mt-7 hover:brightness-75 transition duration-300 "
       >
-        See more
+       Дэлгэрэнгүйг үзэх
       </button>
     </div>
   );

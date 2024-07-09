@@ -91,7 +91,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
               className="w-10 h-10"
             />
             <h1 className="text-xl text-white tracking-widest font-semibold uppercase">
-              <span>GoGo</span>
+              <span>FOX</span>
               <span className="text-primary">Moviw</span>
             </h1>
           </Link>
@@ -102,7 +102,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
             isSidebarActive ? "-mt-6" : "mt-12"
           }`}
         >
-          MENU
+          Цэс
         </div>
         <div className="mt-8 ml-4 flex flex-col gap-6">
           <Link
@@ -113,7 +113,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
             } hover:text-white transition duration-300`}
           >
             <AiOutlineHome size={25} />
-            <p>Home</p>
+            <p>Нүүр</p>
           </Link>
 
           <Link
@@ -124,7 +124,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
             } hover:text-white transition duration-300`}
           >
             <MdOutlineExplore size={25} />
-            <p>Explore</p>
+            <p>Судлах</p>
           </Link>
 
           {/* <Link
@@ -146,11 +146,11 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
             } hover:text-white transition duration-300`}
           >
             <BiSearch size={25} />
-            <p>Search</p>
+            <p>Хайх</p>
           </Link>
         </div>
 
-        <div className="text-white text-lg font-medium mt-12">PERSONAL</div>
+        <div className="text-white text-lg font-medium mt-12">ХУВИЙН</div>
         <div className="mt-8 ml-4 flex flex-col gap-6">
           <button
             onClick={() => personalPageHandler("/bookmarked")}
@@ -160,7 +160,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
             } hover:text-white transition duration-300`}
           >
             <BsBookmarkHeart size={25} />
-            <p>Bookmarked</p>
+            <p>Хавчуургатай</p>
           </button>
 
           <button
@@ -171,11 +171,11 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
             } hover:text-white transition duration-300`}
           >
             <AiOutlineHistory size={25} />
-            <p>History</p>
+            <p>Түүх</p>
           </button>
         </div>
 
-        <div className="text-white text-lg font-medium mt-12">GENERAL</div>
+        <div className="text-white text-lg font-medium mt-12">ЕРӨНХИЙ</div>
         <div className="mt-8 ml-4 flex flex-col gap-6">
           <button
             onClick={() => personalPageHandler("/profile")}
@@ -185,7 +185,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
             } hover:text-white transition duration-300`}
           >
             <BiUserCircle size={25} />
-            <p>Profile</p>
+            <p>Профайл</p>
           </button>
 
           {!currentUser && (
@@ -194,7 +194,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
               className="flex gap-5 items-center"
             >
               <HiOutlineLogin size={30} />
-              <p>Login</p>
+              <p>Нэвтрэх</p>
             </Link>
           )}
 
@@ -204,7 +204,7 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, setIsSidebarActive }) => {
               className="flex gap-5 items-center"
             >
               <HiOutlineLogout size={30} />
-              <p>Logout</p>
+              <p>Гарах</p>
             </button>
           )}
         </div>

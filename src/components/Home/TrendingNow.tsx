@@ -10,7 +10,7 @@ const TrendingNow: FC = () => {
     getTrendingNow
   );
 
-  if (isError) return <div>ERROR: ${error.message}</div>;
+  if (isError) return <div>АЛДАА: ${error.message}</div>;
   // if (isLoading) return <div>Loading...</div>;
   return (
     <RightbarFilms

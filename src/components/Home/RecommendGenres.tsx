@@ -27,7 +27,7 @@ const RecommendGenres: FC<RecommendGenresProps> = ({ currentTab }) => {
     Error
   >(["genres"], getRecommendGenres2);
 
-  if (isError) return <div>ERROR: {error.message}</div>;
+  if (isError) return <div>АЛДАА:{error.message}</div>;
 
   if (isLoading)
     return (

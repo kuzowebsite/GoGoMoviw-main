@@ -69,10 +69,10 @@ const SignUp: FunctionComponent<SignUpProps> = ({ setIsSignIn, isSignIn }) => {
         <div className="flex flex-col items-center mb-5">
           <div className="text-[50px] font-semibold mb-1 mx-auto text-center md:text-left">
             <div className="uppercase tracking-wider text-xl font-medium mb-2">
-              Start for free
+            Үнэгүй эхлээрэй
             </div>
             <div className="text-primary leading-none mb-4 ">
-              Create Account
+            Бүртгэл үүсгэх
             </div>
           </div>
           <div className="flex gap-4 mb-8">
@@ -93,7 +93,7 @@ const SignUp: FunctionComponent<SignUpProps> = ({ setIsSignIn, isSignIn }) => {
               <FaFacebookF size={25} className="text-primary" />
             </button>
           </div>
-          <p className="text-lg">or use your email account: </p>
+          <p className="text-lg">эсвэл имэйл хаягаа ашиглана уу: </p>
         </div>
 
         <Formik
@@ -134,7 +134,7 @@ const SignUp: FunctionComponent<SignUpProps> = ({ setIsSignIn, isSignIn }) => {
                 translate-y-[-50%] visible peer-placeholder-shown:opacity-0 peer-placeholder-shown:invisible peer-placeholder-shown:translate-y-[-10%] ease-in-out
                 `}
                 >
-                  First name
+                  Нэр
                 </label>
                 <CgProfile
                   size={25}
@@ -158,7 +158,7 @@ const SignUp: FunctionComponent<SignUpProps> = ({ setIsSignIn, isSignIn }) => {
                 translate-y-[-50%] visible peer-placeholder-shown:opacity-0 peer-placeholder-shown:invisible peer-placeholder-shown:translate-y-[-10%] ease-in-out
                 `}
                 >
-                  Last name
+                  Овог
                 </label>
                 <CgProfile
                   size={25}
@@ -182,7 +182,7 @@ const SignUp: FunctionComponent<SignUpProps> = ({ setIsSignIn, isSignIn }) => {
                 translate-y-[-50%] visible peer-placeholder-shown:opacity-0 peer-placeholder-shown:invisible peer-placeholder-shown:translate-y-[-10%] ease-in-out
                 `}
               >
-                Email
+                Имэйл
               </label>
               <AiOutlineMail
                 size={25}
@@ -205,7 +205,7 @@ const SignUp: FunctionComponent<SignUpProps> = ({ setIsSignIn, isSignIn }) => {
                 translate-y-[-50%] visible peer-placeholder-shown:opacity-0 peer-placeholder-shown:invisible peer-placeholder-shown:translate-y-[-10%] ease-in-out
                 `}
               >
-                Password
+                Нууц үг
               </label>
               <RiLockPasswordLine
                 size={25}
@@ -219,18 +219,18 @@ const SignUp: FunctionComponent<SignUpProps> = ({ setIsSignIn, isSignIn }) => {
               type="submit"
               className="px-12 py-3 bg-primary rounded-full text-lg text-white uppercase absolute left-1/2 -translate-x-1/2 hover:bg-[#4161cc] transition duration-300"
             >
-              Register
+              Бүртгүүлэх
             </button>
           </Form>
         </Formik>
         <p className="text-xl flex gap-2 mt-32 justify-center">
-          <span>Already a member?</span>
+          <span>Аль хэдийн гишүүн болсон уу?</span>
           <button
             type="submit"
             onClick={() => setIsSignIn(!isSignIn)}
             className="text-primary/90 underline"
           >
-            Sign In
+            Нэвтрэх
           </button>
         </p>
       </div>

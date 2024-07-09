@@ -19,18 +19,18 @@ const DeleteAccount: FunctionComponent<DeleteAccountProps> = ({
               <AiOutlineDelete size={40} className="text-red-500 " />
             </div>
             <p className="text-white text-xl text-center font-medium mb-4">
-              You are about to delete this account
+            Та энэ бүртгэлийг устгах гэж байна
             </p>
             <p className="text-center mb-[2px]">
-              This will remove your account and cannot recover
+            Энэ нь таны бүртгэлийг устгах бөгөөд сэргээх боломжгүй
             </p>
-            <p className="text-center ">Are you sure?</p>
+            <p className="text-center ">Чи итгэлтэй байна уу?</p>
             <div className="flex mt-8 justify-end">
               <button
                 onClick={() => setIsShowPrompt(false)}
                 className="px-6 py-1 rounded-md text-white hover:brightness-75 transition duration-300"
               >
-                Cancel
+                Цуцлах
               </button>
               <button
                 onClick={() => {
@@ -39,7 +39,7 @@ const DeleteAccount: FunctionComponent<DeleteAccountProps> = ({
                 }}
                 className="px-6 py-1 rounded-md text-white bg-red-500 hover:bg-red-600 transition duration-300"
               >
-                Yes
+                Тийм
               </button>
             </div>
           </div>
@@ -54,7 +54,7 @@ const DeleteAccount: FunctionComponent<DeleteAccountProps> = ({
           onClick={() => setIsShowPrompt(true)}
           className="px-5 py-2  border rounded-full text-red-500 border-dark-lighten-2 bg-dark-lighten hover:bg-red-500 hover:text-white transition duration-300"
         >
-          Delete account
+          Бүртгэл устгах
         </button>
       </div>
     </>
